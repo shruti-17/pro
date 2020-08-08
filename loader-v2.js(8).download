@@ -1,0 +1,101 @@
+(function() {
+
+    var __hs_cta_json = {"css":"a#cta_button_4505120_f94c9dc2-27a7-41ca-9af2-7243880cdaee {\n    cursor: pointer !important;\n\n    \n  }\n\na#cta_button_4505120_f94c9dc2-27a7-41ca-9af2-7243880cdaee:hover {\n}\n\na#cta_button_4505120_f94c9dc2-27a7-41ca-9af2-7243880cdaee:active, #cta_button_4505120_f94c9dc2-27a7-41ca-9af2-7243880cdaee:active:hover {\n}\n\n","css_links":[],"image_html":"<a id=\"cta_button_4505120_f94c9dc2-27a7-41ca-9af2-7243880cdaee\" class=\"cta_button\" href=\"https://www.clarifai.com/cs/c/?cta_guid=f94c9dc2-27a7-41ca-9af2-7243880cdaee&placement_guid=c7f8a4ad-523a-4695-a85c-605a6e675ae2&portal_id=4505120&canon=https%3A%2F%2Fwww.clarifai.com%2Fpredict&redirect_url=APefjpHE9bsAMKJZ3p-bfoya9mnhBPcS03cnusJdA2mROrOjZo7Fs3WFEXgRlJf94rC5m4m93d9DEHYSQJa10qtRuJVHRtMOWwGbFaMNinTolt4oEawZkX4Vbvuxl3a47a2Kem4_m5BCV3hz1ZfxC2JA1X_4K37V0g&click=c437e90c-cf63-4e2f-ba5c-c868c78e2202&hsutk=c7a0000017e61ef513e90173c7116921&signature=AAH58kH2LhyWN3aj_z4Yvz7itZsKhocqwA&pageId=32455009430\"  cta_dest_link=\"https://www.clarifai.com/forrester-wave-computer-vison\"><img id=\"hs-cta-img-c7f8a4ad-523a-4695-a85c-605a6e675ae2\" class=\"hs-cta-img cta\" style=\"border-width: 0px; /*hs-extra-styles*/\" mce_noresize=\"1\" alt=\"Read the full report\" src=\"https://cdn2.hubspot.net/hubshot/20/07/23/6c2fda3d-89fb-4bd6-a6ce-52a7d3d1e475.png\" srcset=\"https://cdn2.hubspot.net/hubshot/20/07/23/6087edd3-a6ae-4134-b9fc-f2596ea5e594.png 4x, https://cdn2.hubspot.net/hubshot/20/07/23/7d5d9c64-d211-40bb-ae3c-9724c04e5ca8.png 3x, https://cdn2.hubspot.net/hubshot/20/07/23/a3c21468-efe4-4fbf-be15-1785c76c0bbf.png 2x\"/></a>","is_image":false,"placement_element_class":"hs-cta-c7f8a4ad-523a-4695-a85c-605a6e675ae2","raw_html":"<a id=\"cta_button_4505120_f94c9dc2-27a7-41ca-9af2-7243880cdaee\" class=\"cta_button cta\" href=\"https://www.clarifai.com/cs/c/?cta_guid=f94c9dc2-27a7-41ca-9af2-7243880cdaee&placement_guid=c7f8a4ad-523a-4695-a85c-605a6e675ae2&portal_id=4505120&canon=https%3A%2F%2Fwww.clarifai.com%2Fpredict&redirect_url=APefjpHE9bsAMKJZ3p-bfoya9mnhBPcS03cnusJdA2mROrOjZo7Fs3WFEXgRlJf94rC5m4m93d9DEHYSQJa10qtRuJVHRtMOWwGbFaMNinTolt4oEawZkX4Vbvuxl3a47a2Kem4_m5BCV3hz1ZfxC2JA1X_4K37V0g&click=c437e90c-cf63-4e2f-ba5c-c868c78e2202&hsutk=c7a0000017e61ef513e90173c7116921&signature=AAH58kH2LhyWN3aj_z4Yvz7itZsKhocqwA&pageId=32455009430\"  style=\"/*hs-extra-styles*/\" cta_dest_link=\"https://www.clarifai.com/forrester-wave-computer-vison\" title=\"Read the full report\">Read the full report</a>"};
+    var __hs_cta = {};
+
+    __hs_cta.drop = function() {
+        var is_legacy = document.getElementById('hs-cta-ie-element') && true || false,
+            html = __hs_cta_json.image_html,
+            tags = __hs_cta.getTags(),
+            is_image = __hs_cta_json.is_image,
+            parent, _style;
+
+        if (!is_legacy && !is_image) {
+            parent = (document.getElementsByTagName("head")[0]||document.getElementsByTagName("body")[0]);
+
+            _style = document.createElement('style');
+            parent.insertBefore(_style, parent.childNodes[0]);
+            try {
+                default_css = ".hs-cta-wrapper p, .hs-cta-wrapper div { margin: 0; padding: 0; }";
+                cta_css = default_css + " " + __hs_cta_json.css;
+                // http://blog.coderlab.us/2005/09/22/using-the-innertext-property-with-firefox/
+                _style[document.all ? 'innerText' : 'textContent'] = cta_css;
+            } catch (e) {
+                // addressing an ie9 issue
+                _style.styleSheet.cssText = cta_css;
+            }
+            
+            html = __hs_cta_json.raw_html;
+
+        }
+         
+
+        for (var i = 0; i < tags.length; ++i) {
+
+            var tag = tags[i];
+            var images = tag.getElementsByTagName('img');
+            var cssText = "";
+            var align = "";
+            for (var j = 0; j < images.length; j++) {
+                align = images[j].align;
+                images[j].style.border = '';
+                images[j].style.display = '';
+                cssText = images[j].style.cssText;
+            }
+
+            if (align == "right") {
+                tag.style.display = "block";
+                tag.style.textAlign = "right";
+            } else if (align == "middle") {
+                tag.style.display = "block";
+                tag.style.textAlign = "center";
+            }
+
+            tag.innerHTML = html.replace('/*hs-extra-styles*/', cssText);
+            tag.style.visibility = 'visible';
+            tag.setAttribute('data-hs-drop', 'true');
+            window.hbspt && hbspt.cta && hbspt.cta.afterLoad && hbspt.cta.afterLoad('c7f8a4ad-523a-4695-a85c-605a6e675ae2');
+        }
+
+        return tags;
+    };
+
+    __hs_cta.getTags = function() {
+        var allTags, check, i, divTags, spanTags,
+            tags = [];
+            if (document.getElementsByClassName) {
+                allTags = document.getElementsByClassName(__hs_cta_json.placement_element_class);
+                check = function(ele) {
+                    return (ele.nodeName == 'DIV' || ele.nodeName == 'SPAN') && (!ele.getAttribute('data-hs-drop'));
+                };
+            } else {
+                allTags = [];
+                divTags = document.getElementsByTagName("div");
+                spanTags = document.getElementsByTagName("span");
+                for (i = 0; i < spanTags.length; i++) {
+                    allTags.push(spanTags[i]);
+                }
+                for (i = 0; i < divTags.length; i++) {
+                    allTags.push(divTags[i]);
+                }
+
+                check = function(ele) {
+                    return (ele.className.indexOf(__hs_cta_json.placement_element_class) > -1) && (!ele.getAttribute('data-hs-drop'));
+                };
+            }
+            for (i = 0; i < allTags.length; ++i) {
+                if (check(allTags[i])) {
+                    tags.push(allTags[i]);
+                }
+            }
+        return tags;
+    };
+
+    // need to do a slight timeout so IE has time to react
+    setTimeout(__hs_cta.drop, 10);
+    
+    window._hsq = window._hsq || [];
+    window._hsq.push(['trackCtaView', 'c7f8a4ad-523a-4695-a85c-605a6e675ae2', 'f94c9dc2-27a7-41ca-9af2-7243880cdaee']);
+    
+
+}());

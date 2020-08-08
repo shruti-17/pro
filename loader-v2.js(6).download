@@ -1,0 +1,101 @@
+(function() {
+
+    var __hs_cta_json = {"css":"a#cta_button_4505120_edffbb21-5ab1-436e-9b2f-32c71525084a {\n    cursor: pointer;\n\n        cursor: pointer;\n    font-weight: 400 !important;\n    text-decoration: none !important;\n    display: block !important;\n    height: 5rem !important;\n    line-height: 5rem !important;\n    font-size: 1.7rem !important;\n    margin: 0 !important;\n    width: 100% !important;\n    max-width: calc(100% - 6rem);\n    margin-top: 2rem !important;\n  }\n\na#cta_button_4505120_edffbb21-5ab1-436e-9b2f-32c71525084a:hover {\n}\n\na#cta_button_4505120_edffbb21-5ab1-436e-9b2f-32c71525084a:active, #cta_button_4505120_edffbb21-5ab1-436e-9b2f-32c71525084a:active:hover {\n}\n\n","css_links":[],"image_html":"<a id=\"cta_button_4505120_edffbb21-5ab1-436e-9b2f-32c71525084a\" class=\"cta_button\" href=\"https://www.clarifai.com/cs/c/?cta_guid=edffbb21-5ab1-436e-9b2f-32c71525084a&placement_guid=a5f8bee8-bc69-4882-b6bd-de8e37fb4139&portal_id=4505120&canon=https%3A%2F%2Fwww.clarifai.com%2Fpredict&redirect_url=APefjpG_ZoLzyrlFrtZ8PUATs8oy6XQ9CAXKbZEMamx9Tt6QO3iGE5dHjRWH2zTgOOmaHnYUuFJSu-d5erVNQW_QiVuuuC4OOedYGPNWJPZH7p7B7UlXbphrs56yn_OG6oJYYD1kX2JX&click=a6db7c87-f004-4c05-893f-c9f4902fb933&hsutk=c7a000001d9f1db316150173c711691c&signature=AAH58kGf7DOdzxCVJqb47Mxx8CtY_R4AWQ&pageId=32455009430\"  cta_dest_link=\"https://www.clarifai.com/contact\"><img id=\"hs-cta-img-a5f8bee8-bc69-4882-b6bd-de8e37fb4139\" class=\"hs-cta-img cta visible-phone visible-tablet\" style=\"border-width: 0px; /*hs-extra-styles*/\" mce_noresize=\"1\" alt=\"Contact Us\" src=\"https://cdn2.hubspot.net/hubshot/20/07/03/2dd933c7-e06f-4d3b-a42c-6855d95c7298.png\" srcset=\"https://cdn2.hubspot.net/hubshot/20/07/03/4ca8a4af-e130-4e86-9d85-a47ca4453538.png 4x, https://cdn2.hubspot.net/hubshot/20/07/03/d5c88d18-e6ba-4cc7-ba41-08d6c1f6a068.png 3x, https://cdn2.hubspot.net/hubshot/20/07/03/78726aa4-b64c-4aff-99b7-9006e99250eb.png 2x\"/></a>","is_image":false,"placement_element_class":"hs-cta-a5f8bee8-bc69-4882-b6bd-de8e37fb4139","raw_html":"<a id=\"cta_button_4505120_edffbb21-5ab1-436e-9b2f-32c71525084a\" class=\"cta_button cta visible-phone visible-tablet\" href=\"https://www.clarifai.com/cs/c/?cta_guid=edffbb21-5ab1-436e-9b2f-32c71525084a&placement_guid=a5f8bee8-bc69-4882-b6bd-de8e37fb4139&portal_id=4505120&canon=https%3A%2F%2Fwww.clarifai.com%2Fpredict&redirect_url=APefjpG_ZoLzyrlFrtZ8PUATs8oy6XQ9CAXKbZEMamx9Tt6QO3iGE5dHjRWH2zTgOOmaHnYUuFJSu-d5erVNQW_QiVuuuC4OOedYGPNWJPZH7p7B7UlXbphrs56yn_OG6oJYYD1kX2JX&click=a6db7c87-f004-4c05-893f-c9f4902fb933&hsutk=c7a000001d9f1db316150173c711691c&signature=AAH58kGf7DOdzxCVJqb47Mxx8CtY_R4AWQ&pageId=32455009430\"  style=\"/*hs-extra-styles*/\" cta_dest_link=\"https://www.clarifai.com/contact\" title=\"Contact Us\">Contact Us</a>"};
+    var __hs_cta = {};
+
+    __hs_cta.drop = function() {
+        var is_legacy = document.getElementById('hs-cta-ie-element') && true || false,
+            html = __hs_cta_json.image_html,
+            tags = __hs_cta.getTags(),
+            is_image = __hs_cta_json.is_image,
+            parent, _style;
+
+        if (!is_legacy && !is_image) {
+            parent = (document.getElementsByTagName("head")[0]||document.getElementsByTagName("body")[0]);
+
+            _style = document.createElement('style');
+            parent.insertBefore(_style, parent.childNodes[0]);
+            try {
+                default_css = ".hs-cta-wrapper p, .hs-cta-wrapper div { margin: 0; padding: 0; }";
+                cta_css = default_css + " " + __hs_cta_json.css;
+                // http://blog.coderlab.us/2005/09/22/using-the-innertext-property-with-firefox/
+                _style[document.all ? 'innerText' : 'textContent'] = cta_css;
+            } catch (e) {
+                // addressing an ie9 issue
+                _style.styleSheet.cssText = cta_css;
+            }
+            
+            html = __hs_cta_json.raw_html;
+
+        }
+         
+
+        for (var i = 0; i < tags.length; ++i) {
+
+            var tag = tags[i];
+            var images = tag.getElementsByTagName('img');
+            var cssText = "";
+            var align = "";
+            for (var j = 0; j < images.length; j++) {
+                align = images[j].align;
+                images[j].style.border = '';
+                images[j].style.display = '';
+                cssText = images[j].style.cssText;
+            }
+
+            if (align == "right") {
+                tag.style.display = "block";
+                tag.style.textAlign = "right";
+            } else if (align == "middle") {
+                tag.style.display = "block";
+                tag.style.textAlign = "center";
+            }
+
+            tag.innerHTML = html.replace('/*hs-extra-styles*/', cssText);
+            tag.style.visibility = 'visible';
+            tag.setAttribute('data-hs-drop', 'true');
+            window.hbspt && hbspt.cta && hbspt.cta.afterLoad && hbspt.cta.afterLoad('a5f8bee8-bc69-4882-b6bd-de8e37fb4139');
+        }
+
+        return tags;
+    };
+
+    __hs_cta.getTags = function() {
+        var allTags, check, i, divTags, spanTags,
+            tags = [];
+            if (document.getElementsByClassName) {
+                allTags = document.getElementsByClassName(__hs_cta_json.placement_element_class);
+                check = function(ele) {
+                    return (ele.nodeName == 'DIV' || ele.nodeName == 'SPAN') && (!ele.getAttribute('data-hs-drop'));
+                };
+            } else {
+                allTags = [];
+                divTags = document.getElementsByTagName("div");
+                spanTags = document.getElementsByTagName("span");
+                for (i = 0; i < spanTags.length; i++) {
+                    allTags.push(spanTags[i]);
+                }
+                for (i = 0; i < divTags.length; i++) {
+                    allTags.push(divTags[i]);
+                }
+
+                check = function(ele) {
+                    return (ele.className.indexOf(__hs_cta_json.placement_element_class) > -1) && (!ele.getAttribute('data-hs-drop'));
+                };
+            }
+            for (i = 0; i < allTags.length; ++i) {
+                if (check(allTags[i])) {
+                    tags.push(allTags[i]);
+                }
+            }
+        return tags;
+    };
+
+    // need to do a slight timeout so IE has time to react
+    setTimeout(__hs_cta.drop, 10);
+    
+    window._hsq = window._hsq || [];
+    window._hsq.push(['trackCtaView', 'a5f8bee8-bc69-4882-b6bd-de8e37fb4139', 'edffbb21-5ab1-436e-9b2f-32c71525084a']);
+    
+
+}());

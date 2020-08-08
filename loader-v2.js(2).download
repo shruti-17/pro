@@ -1,0 +1,101 @@
+(function() {
+
+    var __hs_cta_json = {"css":"a#cta_button_4505120_20815eed-c669-4259-92b2-bc0c6e896839 {\n    cursor: pointer;\n\n    cursor: pointer;\nfont-weight: 400 !important;\ntext-decoration: none !important;\ndisplay: block;\nheight: 5rem !important;\nline-height: 5rem !important;\nfont-size: 1.7rem !important;\nmargin: 0 !important;\nwidth: 100% !important;\nmax-width: calc(100% - 6rem);\nmargin-top: 2rem !important;\nmargin-left: 1rem !important;\nmargin: 0 !important;\ncursor: pointer;\nfont-weight: 400 !important;\ntext-decoration: none !important;\ndisplay: inline-block;\nheight: 4.25rem !important;\nline-height: 4.25rem !important;\nfont-size: 1.7rem !important;\nmargin: 0 !important;\npadding: 0 2rem !important;\nwidth: fit-content !important;\nmax-width: fit-content !important;\nwhite-space: nowrap;\nmargin-right: 1rem !important;\ncolor: #004eeb;\nborder: 1px solid #004eeb21;\nbackground: #e8f1ff;\n  }\n\na#cta_button_4505120_20815eed-c669-4259-92b2-bc0c6e896839:hover {\n}\n\na#cta_button_4505120_20815eed-c669-4259-92b2-bc0c6e896839:active, #cta_button_4505120_20815eed-c669-4259-92b2-bc0c6e896839:active:hover {\n}\n\n","css_links":[],"image_html":"<a id=\"cta_button_4505120_20815eed-c669-4259-92b2-bc0c6e896839\" class=\"cta_button\" href=\"https://www.clarifai.com/cs/c/?cta_guid=20815eed-c669-4259-92b2-bc0c6e896839&placement_guid=b0be48b0-8009-46a5-a63a-fef86ad4b96e&portal_id=4505120&canon=https%3A%2F%2Fwww.clarifai.com%2Fpredict&redirect_url=APefjpGAU3LaNoOpt-Wqc9fT7ZB_i-gCAykTOjxKAwhiG-9zbKvNL5RY5PNF47zIUSU-Y7x_hpY2i8BulSoeqLQgD3ajX2pWUg0s1lOm-dg8x9-wGJPqlXMmxi79rCYVZHyuoibRmNA-&click=48ac25c8-76ac-4bd8-a1ee-a8685d643776&hsutk=c7a00000142b12a6167d0173c7116914&signature=AAH58kHqxjGpz6R0VPe1L-_yMfkRvOEa2w&pageId=32455009430\"  target=\"_blank\"  cta_dest_link=\"https://portal.clarifai.com/signup\"><img id=\"hs-cta-img-b0be48b0-8009-46a5-a63a-fef86ad4b96e\" class=\"hs-cta-img cta cta2 visible-desktop\" style=\"border-width: 0px; /*hs-extra-styles*/\" mce_noresize=\"1\" alt=\"Sign up\" src=\"https://cdn2.hubspot.net/hubshot/20/07/12/735b0976-3683-41d7-8d4c-6732d516a943.png\" srcset=\"https://cdn2.hubspot.net/hubshot/20/07/12/4616bf12-83c0-4976-b17b-771d02bb6e90.png 4x, https://cdn2.hubspot.net/hubshot/20/07/12/9bede207-ee9c-4e0c-9c37-7177698b4c6c.png 3x, https://cdn2.hubspot.net/hubshot/20/07/12/91b4d031-3c34-4666-a8a8-5598b28b2f76.png 2x\"/></a>","is_image":false,"placement_element_class":"hs-cta-b0be48b0-8009-46a5-a63a-fef86ad4b96e","raw_html":"<a id=\"cta_button_4505120_20815eed-c669-4259-92b2-bc0c6e896839\" class=\"cta_button cta cta2 visible-desktop\" href=\"https://www.clarifai.com/cs/c/?cta_guid=20815eed-c669-4259-92b2-bc0c6e896839&placement_guid=b0be48b0-8009-46a5-a63a-fef86ad4b96e&portal_id=4505120&canon=https%3A%2F%2Fwww.clarifai.com%2Fpredict&redirect_url=APefjpGAU3LaNoOpt-Wqc9fT7ZB_i-gCAykTOjxKAwhiG-9zbKvNL5RY5PNF47zIUSU-Y7x_hpY2i8BulSoeqLQgD3ajX2pWUg0s1lOm-dg8x9-wGJPqlXMmxi79rCYVZHyuoibRmNA-&click=48ac25c8-76ac-4bd8-a1ee-a8685d643776&hsutk=c7a00000142b12a6167d0173c7116914&signature=AAH58kHqxjGpz6R0VPe1L-_yMfkRvOEa2w&pageId=32455009430\" target=\"_blank\" style=\"/*hs-extra-styles*/\" cta_dest_link=\"https://portal.clarifai.com/signup\" title=\"Sign up\">Sign up</a>"};
+    var __hs_cta = {};
+
+    __hs_cta.drop = function() {
+        var is_legacy = document.getElementById('hs-cta-ie-element') && true || false,
+            html = __hs_cta_json.image_html,
+            tags = __hs_cta.getTags(),
+            is_image = __hs_cta_json.is_image,
+            parent, _style;
+
+        if (!is_legacy && !is_image) {
+            parent = (document.getElementsByTagName("head")[0]||document.getElementsByTagName("body")[0]);
+
+            _style = document.createElement('style');
+            parent.insertBefore(_style, parent.childNodes[0]);
+            try {
+                default_css = ".hs-cta-wrapper p, .hs-cta-wrapper div { margin: 0; padding: 0; }";
+                cta_css = default_css + " " + __hs_cta_json.css;
+                // http://blog.coderlab.us/2005/09/22/using-the-innertext-property-with-firefox/
+                _style[document.all ? 'innerText' : 'textContent'] = cta_css;
+            } catch (e) {
+                // addressing an ie9 issue
+                _style.styleSheet.cssText = cta_css;
+            }
+            
+            html = __hs_cta_json.raw_html;
+
+        }
+         
+
+        for (var i = 0; i < tags.length; ++i) {
+
+            var tag = tags[i];
+            var images = tag.getElementsByTagName('img');
+            var cssText = "";
+            var align = "";
+            for (var j = 0; j < images.length; j++) {
+                align = images[j].align;
+                images[j].style.border = '';
+                images[j].style.display = '';
+                cssText = images[j].style.cssText;
+            }
+
+            if (align == "right") {
+                tag.style.display = "block";
+                tag.style.textAlign = "right";
+            } else if (align == "middle") {
+                tag.style.display = "block";
+                tag.style.textAlign = "center";
+            }
+
+            tag.innerHTML = html.replace('/*hs-extra-styles*/', cssText);
+            tag.style.visibility = 'visible';
+            tag.setAttribute('data-hs-drop', 'true');
+            window.hbspt && hbspt.cta && hbspt.cta.afterLoad && hbspt.cta.afterLoad('b0be48b0-8009-46a5-a63a-fef86ad4b96e');
+        }
+
+        return tags;
+    };
+
+    __hs_cta.getTags = function() {
+        var allTags, check, i, divTags, spanTags,
+            tags = [];
+            if (document.getElementsByClassName) {
+                allTags = document.getElementsByClassName(__hs_cta_json.placement_element_class);
+                check = function(ele) {
+                    return (ele.nodeName == 'DIV' || ele.nodeName == 'SPAN') && (!ele.getAttribute('data-hs-drop'));
+                };
+            } else {
+                allTags = [];
+                divTags = document.getElementsByTagName("div");
+                spanTags = document.getElementsByTagName("span");
+                for (i = 0; i < spanTags.length; i++) {
+                    allTags.push(spanTags[i]);
+                }
+                for (i = 0; i < divTags.length; i++) {
+                    allTags.push(divTags[i]);
+                }
+
+                check = function(ele) {
+                    return (ele.className.indexOf(__hs_cta_json.placement_element_class) > -1) && (!ele.getAttribute('data-hs-drop'));
+                };
+            }
+            for (i = 0; i < allTags.length; ++i) {
+                if (check(allTags[i])) {
+                    tags.push(allTags[i]);
+                }
+            }
+        return tags;
+    };
+
+    // need to do a slight timeout so IE has time to react
+    setTimeout(__hs_cta.drop, 10);
+    
+    window._hsq = window._hsq || [];
+    window._hsq.push(['trackCtaView', 'b0be48b0-8009-46a5-a63a-fef86ad4b96e', '20815eed-c669-4259-92b2-bc0c6e896839']);
+    
+
+}());

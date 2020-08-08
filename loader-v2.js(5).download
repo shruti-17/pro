@@ -1,0 +1,101 @@
+(function() {
+
+    var __hs_cta_json = {"css":"a#cta_button_4505120_f0fdae17-145f-4c1e-9da4-1525343cd101 {\n    cursor: pointer;\n\n    cursor: pointer;\nfont-weight: 400 !important;\ntext-decoration: none !important;\ndisplay: block !important;\nheight: 5rem !important;\nline-height: 5rem !important;\nfont-size: 1.7rem !important;\nmargin: 0 !important;\nwidth: 100% !important;\nmax-width: calc(100% - 6rem);\nmargin-top: 2rem !important;\nfloat:left !important;\nwidth: calc(50% - 10px) !important;\ndisplay:inline-block !important;\n  }\n\na#cta_button_4505120_f0fdae17-145f-4c1e-9da4-1525343cd101:hover {\n}\n\na#cta_button_4505120_f0fdae17-145f-4c1e-9da4-1525343cd101:active, #cta_button_4505120_f0fdae17-145f-4c1e-9da4-1525343cd101:active:hover {\n}\n\n","css_links":[],"image_html":"<a id=\"cta_button_4505120_f0fdae17-145f-4c1e-9da4-1525343cd101\" class=\"cta_button\" href=\"https://www.clarifai.com/cs/c/?cta_guid=f0fdae17-145f-4c1e-9da4-1525343cd101&placement_guid=ddf6808a-2ae8-41ef-903b-1296780e80ac&portal_id=4505120&canon=https%3A%2F%2Fwww.clarifai.com%2Fpredict&redirect_url=APefjpHC0ES7p_TbvPyX6ZGRvfz-ox3KFnJOKkBJXudlEOeutuSH-BL67LjLsie1AYRwQtHwPUN5VJ8TTHW4XDyk8Az2gPSVCLsqtW3hXzHrbFXfGJgpCnVF1b6NKngLQ4Y_4nt75T5m&click=4d2015ac-830f-4091-b884-7d2adb80e8b3&hsutk=c7a000001f7f178417a80173c711691b&signature=AAH58kHRXe1imG5CxTv9yJOw5_22Ob61KA&pageId=32455009430\"  target=\"_blank\"  cta_dest_link=\"https://portal.clarifai.com/signup\"><img id=\"hs-cta-img-ddf6808a-2ae8-41ef-903b-1296780e80ac\" class=\"hs-cta-img cta cta2\" style=\"border-width: 0px; /*hs-extra-styles*/\" mce_noresize=\"1\" alt=\"Sign up\" src=\"https://cdn2.hubspot.net/hubshot/20/07/09/0cfeb90f-9983-4637-9e66-0b62ea0d86af.png\" srcset=\"https://cdn2.hubspot.net/hubshot/20/07/09/57fc8675-3765-4b34-84a4-9369329c3139.png 4x, https://cdn2.hubspot.net/hubshot/20/07/09/3f7792ab-2384-4709-aa89-9b8e6c998315.png 3x, https://cdn2.hubspot.net/hubshot/20/07/09/ed77810a-645d-46f0-a960-60b785877662.png 2x\"/></a>","is_image":false,"placement_element_class":"hs-cta-ddf6808a-2ae8-41ef-903b-1296780e80ac","raw_html":"<a id=\"cta_button_4505120_f0fdae17-145f-4c1e-9da4-1525343cd101\" class=\"cta_button cta cta2\" href=\"https://www.clarifai.com/cs/c/?cta_guid=f0fdae17-145f-4c1e-9da4-1525343cd101&placement_guid=ddf6808a-2ae8-41ef-903b-1296780e80ac&portal_id=4505120&canon=https%3A%2F%2Fwww.clarifai.com%2Fpredict&redirect_url=APefjpHC0ES7p_TbvPyX6ZGRvfz-ox3KFnJOKkBJXudlEOeutuSH-BL67LjLsie1AYRwQtHwPUN5VJ8TTHW4XDyk8Az2gPSVCLsqtW3hXzHrbFXfGJgpCnVF1b6NKngLQ4Y_4nt75T5m&click=4d2015ac-830f-4091-b884-7d2adb80e8b3&hsutk=c7a000001f7f178417a80173c711691b&signature=AAH58kHRXe1imG5CxTv9yJOw5_22Ob61KA&pageId=32455009430\" target=\"_blank\" style=\"/*hs-extra-styles*/\" cta_dest_link=\"https://portal.clarifai.com/signup\" title=\"Sign up\">Sign up</a>"};
+    var __hs_cta = {};
+
+    __hs_cta.drop = function() {
+        var is_legacy = document.getElementById('hs-cta-ie-element') && true || false,
+            html = __hs_cta_json.image_html,
+            tags = __hs_cta.getTags(),
+            is_image = __hs_cta_json.is_image,
+            parent, _style;
+
+        if (!is_legacy && !is_image) {
+            parent = (document.getElementsByTagName("head")[0]||document.getElementsByTagName("body")[0]);
+
+            _style = document.createElement('style');
+            parent.insertBefore(_style, parent.childNodes[0]);
+            try {
+                default_css = ".hs-cta-wrapper p, .hs-cta-wrapper div { margin: 0; padding: 0; }";
+                cta_css = default_css + " " + __hs_cta_json.css;
+                // http://blog.coderlab.us/2005/09/22/using-the-innertext-property-with-firefox/
+                _style[document.all ? 'innerText' : 'textContent'] = cta_css;
+            } catch (e) {
+                // addressing an ie9 issue
+                _style.styleSheet.cssText = cta_css;
+            }
+            
+            html = __hs_cta_json.raw_html;
+
+        }
+         
+
+        for (var i = 0; i < tags.length; ++i) {
+
+            var tag = tags[i];
+            var images = tag.getElementsByTagName('img');
+            var cssText = "";
+            var align = "";
+            for (var j = 0; j < images.length; j++) {
+                align = images[j].align;
+                images[j].style.border = '';
+                images[j].style.display = '';
+                cssText = images[j].style.cssText;
+            }
+
+            if (align == "right") {
+                tag.style.display = "block";
+                tag.style.textAlign = "right";
+            } else if (align == "middle") {
+                tag.style.display = "block";
+                tag.style.textAlign = "center";
+            }
+
+            tag.innerHTML = html.replace('/*hs-extra-styles*/', cssText);
+            tag.style.visibility = 'visible';
+            tag.setAttribute('data-hs-drop', 'true');
+            window.hbspt && hbspt.cta && hbspt.cta.afterLoad && hbspt.cta.afterLoad('ddf6808a-2ae8-41ef-903b-1296780e80ac');
+        }
+
+        return tags;
+    };
+
+    __hs_cta.getTags = function() {
+        var allTags, check, i, divTags, spanTags,
+            tags = [];
+            if (document.getElementsByClassName) {
+                allTags = document.getElementsByClassName(__hs_cta_json.placement_element_class);
+                check = function(ele) {
+                    return (ele.nodeName == 'DIV' || ele.nodeName == 'SPAN') && (!ele.getAttribute('data-hs-drop'));
+                };
+            } else {
+                allTags = [];
+                divTags = document.getElementsByTagName("div");
+                spanTags = document.getElementsByTagName("span");
+                for (i = 0; i < spanTags.length; i++) {
+                    allTags.push(spanTags[i]);
+                }
+                for (i = 0; i < divTags.length; i++) {
+                    allTags.push(divTags[i]);
+                }
+
+                check = function(ele) {
+                    return (ele.className.indexOf(__hs_cta_json.placement_element_class) > -1) && (!ele.getAttribute('data-hs-drop'));
+                };
+            }
+            for (i = 0; i < allTags.length; ++i) {
+                if (check(allTags[i])) {
+                    tags.push(allTags[i]);
+                }
+            }
+        return tags;
+    };
+
+    // need to do a slight timeout so IE has time to react
+    setTimeout(__hs_cta.drop, 10);
+    
+    window._hsq = window._hsq || [];
+    window._hsq.push(['trackCtaView', 'ddf6808a-2ae8-41ef-903b-1296780e80ac', 'f0fdae17-145f-4c1e-9da4-1525343cd101']);
+    
+
+}());
